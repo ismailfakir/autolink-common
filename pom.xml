@@ -85,7 +85,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/ismailfakir/autolink-common</url>
+      <url>https://net.cloudcentrik.autolink.common.github.com/ismailfakir/autolink-common</url>
     </repository>
   </distributionManagement>
 </project>
