@@ -4,9 +4,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>net.cloudcentrik.autolink.common</groupId>
-  <artifactId>autolink-common</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <groupId>net.cloudcentrik.autolink</groupId>
+  <artifactId>common</artifactId>
+  <version>1.0.0-${timestamp}</version>
+  <packaging>jar</packaging>
 
   <name>autolink-common</name>
   <url>https://github.com/ismailfakir</url>
@@ -15,6 +16,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+
+    <timestamp>${maven.build.timestamp}</timestamp>
+    <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+
   </properties>
 
   <dependencies>
@@ -85,7 +90,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://net.cloudcentrik.autolink.common.github.com/ismailfakir/autolink-common</url>
+      <url>https://maven.pkg.github.com/ismailfakir/autolink-common</url>
     </repository>
   </distributionManagement>
 </project>
