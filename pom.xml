@@ -7,7 +7,7 @@
   <groupId>net.cloudcentrik.autolink</groupId>
   <artifactId>common</artifactId>
   <version>1.0.0-${timestamp}</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>autolink-common</name>
   <url>https://github.com/ismailfakir</url>
@@ -21,6 +21,20 @@
     <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 
   </properties>
+
+  <!-- Deploy GitHub Package Registry -->
+  <profiles>
+    <profile>
+      <id>github</id>
+      <distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/ismailfakir/autolink-common</url>
+        </repository>
+      </distributionManagement>
+    </profile>
+  </profiles>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -93,4 +107,5 @@
       <url>https://maven.pkg.github.com/ismailfakir/autolink-common</url>
     </repository>
   </distributionManagement>
+
 </project>
