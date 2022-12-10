@@ -7,7 +7,6 @@
   <groupId>net.cloudcentrik.autolink</groupId>
   <artifactId>common</artifactId>
   <version>1.0.0-${timestamp}</version>
-  <packaging>pom</packaging>
 
   <name>autolink-common</name>
   <url>https://github.com/ismailfakir</url>
