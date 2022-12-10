@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package command;
+
+option java_multiple_files = true;
+option java_package = "net.cloudcentrik.autolink.common.proto";
+option java_outer_classname = "CommandProtos";
+
+enum CommandStatus {
+  STARTED = 0;
+  FINISH = 1;
+  FAILED = 3;
+  WAITING = 4;
+  UNKNOWN = 5;
+}
+
+enum CommandType {
+  IMPORT_PRODUCT = 0;
+  EXPORT_PRODUCT = 1;
+  IMPORT_ORDER = 2;
+  EXPORT_ORDER = 3;
+  IMPORT_CUSTOMER = 4;
+  EXPORT_CUSTOMER = 5;
+}
+
+message CommandRequest {
+  string commandId = 1;
+  string tenantId = 2;
+  CommandType commandType = 3;
+}
+
+message CommandResponse {
+  string commandId = 1;
+  CommandStatus commandStatus = 2;
+  string serverInfo = 3;
+}

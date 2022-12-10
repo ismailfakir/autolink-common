@@ -1,6 +1,5 @@
 package net.cloudcentrik.autolink.common.identifier;
 
-import lombok.Setter;
 import lombok.ToString;
 
 import java.util.UUID;

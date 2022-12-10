@@ -5,13 +5,14 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>github</id>
-            <username>your-username</username>
-            <password>your-personal-access-token</password>
-        </server>
-    </servers>
+        <servers>
+            <server>
+                <id>github</id>
+                <username>your-username</username>
+                <password>your-personal-access-token</password>
+            </server>
+        </servers>
+
     </settings>
 #### deploy command with profile github
     mvn -Pgithub deploy
@@ -22,13 +23,14 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>github</id>
-            <username>your-username</username>
-            <password>your-personal-access-token</password>
-        </server>
-    </servers>
+        <servers>
+            <server>
+                <id>github</id>
+                <username>your-username</username>
+                <password>your-personal-access-token</password>
+            </server>
+        </servers>
+
     </settings>
 #### add the dependency in the dependencies section in pom.xml
     <dependencies>
@@ -49,7 +51,7 @@
             <url>https://maven.pkg.github.com/ismailfakir/autolink-common</url>
             <snapshots><enabled>true</enabled></snapshots>
             <releases><enabled>true</enabled></releases>
-		</repository>
+        </repository>
         ...
 	</repositories>
 #### install the dependency
